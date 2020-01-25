@@ -1,0 +1,42 @@
+/* ===== FAQ PAGE ===== */
+
+.theme-accordion {
+  .card {
+    box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+  }
+  .card-header {
+    .btn {
+      border-radius: 0;
+      padding: 20px;
+      padding-left: 90px;
+      font-weight: 500;
+
+      &:before {
+        font-family: $material-font;
+        content: '\f273';
+        height: 100%;
+        width: 63px;
+        background-color: $blue;
+        color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 13px;
+        font-size: 25px;
+        transition: all 0.3s ease;
+      }
+
+      &.collapsed {
+        &:before {
+          content: '\f278';
+        }
+      }
+    }
+  }
+  .card-body {
+    padding: 30px 30px 15px;
+    border: 1px solid $light-blue;
+    border-top: 0;
+  }
+}

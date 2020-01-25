@@ -1,0 +1,52 @@
+$montserrat: 'Montserrat', sans-serif;
+
+$open-sans: 'Open Sans', sans-serif;
+
+$material-font: 'Material-Design-Iconic-Font';
+
+$c-black:    #101f41 !default;
+
+$blue:  #4e63d7 !default;
+
+$light-blue:#f3f5ff !default;
+
+$sky-blue:  #76bfe9 !default;
+
+$gradi:linear-gradient(to right, rgba(78,99,215,1) 0%, rgba(118,191,233,1) 100%);
+
+$c-gray: #707070 !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1300px
+) !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1260px
+) !default;
+
+
+// Animation Variables
+$floatY: floatY;
+$floatX: floatX;
+$pulse: pulse;
+$swing: swing;
+$jump:jump;
+$morph:morph;
+$spin:spin;
+$frame:animationFrames;
+$scale:scale;
+$ripple:ripple;

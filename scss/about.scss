@@ -1,0 +1,121 @@
+/* ===== ABOUT PAGE ===== */
+
+.team-item {
+  padding: 35px;
+  padding-right: 0;
+  position: relative;
+  z-index: 0;
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+    border-radius: 10px;
+    z-index: -1;
+  }
+  &:before {
+    height: 100%;
+    background-color: $white;
+    left: 0;
+    top: 0;
+    right: 30px;
+    transition: all 0.3s ease;
+  }
+  &:after {
+    height: 6px;
+    width: calc(100% - 30px);
+    background-color: #4e63d7;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    &:after {
+      height: 100%;
+    }
+  }
+
+  .img-holder {
+    flex-shrink: 0;
+    box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    overflow: hidden;
+    img {
+      border-radius: 10px;
+      width: 100%;
+      transform: scale(1.1);
+      transition: all 0.6s ease;
+    }
+  }
+
+  &:hover {
+    .img-holder {
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+  .socials {
+    position: absolute;
+    a {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.12);
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .team-content {
+    margin-right: 70px;
+    text-align: center;
+    h5 {
+      color: $c-black;
+      transition: all 0.4s ease;
+    }
+    p {
+      color: $blue;
+      transition: all 0.4s ease;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+  &:hover {
+    .team-content {
+      h5, p {
+        color: $white;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.client-slider {
+  .slick-list {
+    margin: 0 -15px;
+  }
+  .item {
+    text-align: center;
+    background-color: $light-blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0 auto;
+      width: 160px;
+    }
+  }
+}
+
+.about-page-img {
+  position: relative;
+  text-align: center;
+}

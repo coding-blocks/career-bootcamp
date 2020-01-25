@@ -1,0 +1,22 @@
+/* ===== CONTACT PAGE ===== */
+
+.contact-section {
+  .contact-detail {
+    li {
+      padding: 22px;
+      color: $white;
+      position: relative;
+      background-color: $blue;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+      i {
+        position: absolute;
+        right: 10px;
+        color: $white;
+        bottom: 10px;
+        font-size: 80px;
+        opacity: 0.1;
+      }
+    }
+  }
+}

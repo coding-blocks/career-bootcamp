@@ -1,0 +1,71 @@
+/*!--
+
+TEMPLATE NAME: Bootbox - Agency HTML Template
+TEMPLATE URI: - https://bootbox.froid.works/src/index.html
+DESCRIPTION: Bootbox Agency HTML Template is crafted carefully and with love which can bring attentions to your client to make things working good for your business.
+VERSION: 1.0.1
+AUTHOR: Ajay Kumar Choudhary
+AUTHOR URL: https://themeforest.net/user/ajay138/
+
+[TABLE OF CONTENTS]
+
+1.0 Custom Variables
+2.0 Variable Reset, Bootstrap mixins & Functions
+3.0 Common CSS
+    3.1 Nav
+    3.1 Header
+    3.1 Footer
+4.0 Page CSS
+    4.1 Home
+    4.2 About
+    4.3 Price
+    4.4 Blog
+    4.5 Contact
+    4.6 Error
+    4.7 Login
+    4.8 FAQ
+    4.9 Careers
+5.0 Reset
+6.0 Custom
+7.0 Animations
+8.0 Customizer Styles
+
+--*/
+
+// (1)Custom Variable
+@import "custom/custom-variables";
+
+// (2)Variable Reset, Bootstrap mixins & Functions
+@import "variables";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// (3)Common CSS
+@import "includes/nav";
+@import "includes/header";
+@import "includes/footer";
+
+// (4)Page CSS
+@import "home";
+@import "about";
+@import "price";
+@import "blog";
+@import "contact";
+@import "error";
+@import "login";
+@import "faq";
+@import "career";
+@import "elements";
+
+// (5)Reset CSS
+@import "includes/reset";
+
+// (6)Custom CSS
+@import "custom";
+
+// (7)Animations
+@import "includes/animation";
+
+// (8)Customizer Styles
+@import "custom/custom-styles";

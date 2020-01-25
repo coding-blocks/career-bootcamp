@@ -1,0 +1,85 @@
+/* ===== Footer ===== */
+footer{
+  position: relative;
+  overflow: hidden;
+  &.footer{
+    padding-top: 150px;
+    background-image: url(../img/shapes/footer-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+  }
+}
+.footer-top{
+  padding: 70px 0 0;
+  @include media-breakpoint-up(md){
+    padding: 70px 0 30px;
+  }
+  @include media-breakpoint-up(lg){
+    padding: 90px 0 30px;
+  }
+  @include media-breakpoint-up(xl){
+    padding: 90px 0 50px;
+  }
+  .btm-sep{
+    &:after{
+      background-color:$white;
+    }
+  }
+  .foot-links{
+    a{
+      color:$white;
+      padding-left: 15px;
+      position: relative;
+      transition: all 0.3s ease;
+      display: block;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+
+      &:before {
+        font-size: 17px;
+        content: '\f2fb';
+        font-family: $material-font;
+        position: absolute;
+        top:2px;
+        left: 0;
+        line-height: 1;
+        transition: all 0.3s ease;
+        color:$white;
+      }
+      &:hover{
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.contact-info{
+  li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color:$white;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+
+    i{
+      left: 0;
+      top: 4px;
+      position: absolute;
+      color:$white;
+    }
+  }
+}
+.copyright{
+  padding: 1.25rem;
+  border-top:1px solid rgba(255,255,255,0.2);
+}
+.logo-footer{
+  width: 175px;
+}

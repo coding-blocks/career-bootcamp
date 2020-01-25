@@ -1,0 +1,77 @@
+/* ===== LOGIN PAGE ===== */
+
+.login-box {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  @include media-breakpoint-up(lg) {
+    margin: 40px 0;
+  }
+
+  .form-wrap {
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    @include media-breakpoint-up(md) {
+      padding: 45px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: -40px;
+      margin-bottom: -40px;
+      padding: 60px;
+    }
+  }
+  .socials {
+    a {
+      box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+.login-section {
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    z-index: -1;
+    background-image: url(../img/shapes/login-wave2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    opacity: 0.10;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/shapes/login-wave1.svg);
+    background-size: cover;
+    background-position: top right;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+  }
+  .content {
+    padding: 45px;
+  }
+}

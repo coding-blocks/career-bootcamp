@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://career-bootcamp.codingblocks.com/sitemap.xml

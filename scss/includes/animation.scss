@@ -1,0 +1,188 @@
+/* ===== Animation ===== */
+
+@keyframes floatY {
+  0% {
+    transform: translateY(40px) rotate(-25deg)
+  }
+  50% {
+    transform: translateY(20px) rotate(-25deg)
+  }
+  100% {
+    transform: translateY(40px) rotate(-25deg)
+  }
+}
+
+@keyframes floatX {
+  0% {
+    transform: translateX(30px)
+  }
+  50% {
+    transform: translateX(10px)
+  }
+  100% {
+    transform: translateX(30px)
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes swing {
+  0%,100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(95deg);
+  }
+}
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0);}
+  40%  {transform: translate3d(0,50%,0);}
+  100% {transform: translate3d(0,0,0);}
+}
+
+@keyframes morph{
+  0%   {border-radius: 60% 100% 69% 64%;}
+  40%  {border-radius: 100% 69% 64% 60%;}
+  100% {border-radius: 69% 64% 60% 100%;}
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); }
+}
+
+@keyframes animationFrames {
+  0%,100% {
+    transform:  translate(200px,111px)  rotate(0deg) ;
+  }
+  50% {
+    transform:  translate(81px,150px)  rotate(40deg) ;
+  }
+}
+
+@keyframes scale {
+  0%,100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1) ;
+  }
+}
+
+// Keyframes variables
+$left: calc(-330px - 50%);
+$right: calc(330px - 50%);
+
+// Keyframes
+@keyframes blobs {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate($left, -50%);
+  }
+  1% {
+    opacity: 1;
+  }
+  35%,65% {
+    opacity: 1;
+    transform: scale(.9) translate(-50%, -50%);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) translate($right, -50%);
+  }
+}
+
+@keyframes blob-grow {
+  0%,  39% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  40%, 42% {
+    transform: scale(1, .9) translate(-50%, -50%);
+  }
+  43%, 44% {
+    transform: scale(1.2, 1.1) translate(-50%, -50%);
+  }
+  45%, 46% {
+    transform: scale(1.3, 1.2) translate(-50%, -50%);
+  }
+  47%, 48% {
+    transform: scale(1.4, 1.3) translate(-50%, -50%);
+  }
+  52%{
+    transform: scale(1.5, 1.4) translate(-50%, -50%);
+  }
+  54% {
+    transform: scale(1.7, 1.6) translate(-50%, -50%);
+  }
+  58% {
+    transform: scale(1.8, 1.7) translate(-50%, -50%);
+  }
+  68%, 70% {
+    transform: scale(1.7, 1.5) translate(-50%, -50%);
+  }
+  78% {
+    transform: scale(1.6, 1.4) translate(-50%, -50%);
+  }
+  80%, 81% {
+    transform: scale(1.5, 1.4) translate(-50%, -50%);
+  }
+  82%, 83% {
+    transform: scale(1.4, 1.3) translate(-50%, -50%);
+  }
+  84%, 85% {
+    transform: scale(1.3, 1.2) translate(-50%, -50%);
+  }
+  86%, 87% {
+    transform: scale(1.2, 1.1) translate(-50%, -50%);
+  }
+  90%, 91% {
+    transform: scale(1, .9) translate(-50%, -50%);
+  }
+  92%, 100% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  100% {
+    opacity: 0;
+     transform: scale3d(1.4, 1.4, 1);
+  }
+}
+
+@keyframes orbit-1 {
+  from {
+    transform: rotate(0deg) translate(calc(250px - 50%), -50%) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(calc(250px - 50%), -50%) rotate(-360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

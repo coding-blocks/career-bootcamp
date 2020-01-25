@@ -1,0 +1,16 @@
+/* ===== Header ====== */
+
+.header{
+  position: relative;
+  z-index: 1041;
+}
+.navigation-bar{
+  transition: all 0.3s ease;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  &.sticky {
+    background-image: linear-gradient(to right, rgba(78, 99, 215, 0.9) 0%, #76bfe9 100%);
+    box-shadow: 0 0 20px -7px rgba(0, 0, 0, 0.6);
+  }
+}

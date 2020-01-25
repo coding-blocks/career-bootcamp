@@ -1,0 +1,225 @@
+/* ===== BLOG PAGE ===== */
+
+.blog-item {
+  background-color: $white;
+  box-shadow: 0 10px 40px 0 rgba(39, 39, 39, 0.1);
+  border-radius: 10px;
+
+  .img-holder {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+    .date {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: $blue;
+      border-radius: 5px;
+      color: $white;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.2;
+      padding: 8px 0;
+      text-transform: capitalize;
+      box-shadow: 0 0 20px 0 rgba(162, 162, 162, 0.4);
+    }
+  }
+  .blog-content {
+    padding: 30px;
+    .rm-btn {
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: $blue;
+      i {
+        transition: all 0.3s ease;
+        padding-left: 2px;
+      }
+      &:hover {
+        text-decoration: none;
+        i {
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.author-social {
+  a {
+    color: #b9c4ff;
+    &:hover, &:focus {
+      color: #ffffff;
+    }
+  }
+}
+
+.meta {
+  font-size: 14px;
+  li {
+    line-height: 1;
+    &:not(:last-of-type) {
+      border-right: 1px solid #d7d7d7;
+      margin-right: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.sidebar {
+  .input-group {
+    border: 1px solid $blue;
+    background-color: $white;
+    padding: 5px;
+    border-radius: 5px;
+    .form-control,
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+    button {
+      width: 42px;
+      background-color: $blue;
+      border: 0;
+      color: $white;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      padding-top: 4px;
+      &:hover {
+        background-color: darken($blue, 5%);
+      }
+    }
+  }
+  .widget {
+    &:not(:last-of-type) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.widget-author {
+  background-color: $blue;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px 0 rgba(162, 162, 162, 0.3);
+
+  .img-holder {
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.widget-list {
+  border-radius: 10px;
+  box-shadow: 0 10px 40px 0 rgba(39, 39, 39, 0.1);
+  padding: 30px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px dashed #d7d7d7;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tagcloud {
+  a {
+    text-transform: capitalize;
+    border-radius: 30px;
+    border: 1px solid #d7d7d7;
+    padding: 5px 16px;
+    color: $c-gray;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    &:hover {
+      border-color: $blue;
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+.blog-detail {
+  blockquote {
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    border-left: 10px solid $blue;
+    box-shadow: 0 0 20px 0 rgba(162, 162, 162, 0.3);
+    @include media-breakpoint-up(md) {
+      padding: 40px;
+    }
+    i {
+      color: $blue;
+      font-size: 50px;
+      transform: rotate(180deg);
+      line-height: 0.45;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 1px;
+      right: 10px;
+      content: '\F1B2';
+      font-family: $material-font;
+      color: $blue;
+      font-size: 140px;
+      opacity: 0.15;
+      line-height: 0.4;
+    }
+  }
+}
+
+.comments-area {
+  .media {
+    position: relative;
+    img {
+      @include media-breakpoint-up(md) {
+        width: 90px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 120px;
+      }
+      width: 50px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    span {
+      color: $blue;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  .comment-reply {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 500;
+    color: #232323;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
