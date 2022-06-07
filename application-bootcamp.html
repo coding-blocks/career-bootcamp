@@ -61,6 +61,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     min-height: 1060px;
 }
+
+    .form-group input[type='text'], .form-group input[type='email'], .form-group input[type='password'] {
+        padding-left: 15px;
+    }
+
+    #thanks-card {
+        display: none;
+    }
+
+    #error-card {
+        display: none;
+    }
+
 </style>
 <body id="page-top">
 <!-- Google Tag Manager (noscript) -->
@@ -129,11 +142,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </span>
         </div>
         <div class="container">
-             <h3 class="top-sep"></h3>
-<br><br>
-
-
-<iframe  class ="application-widget" src="https://docs.google.com/forms/d/e/1FAIpQLSfpUN1TBRRuiW8qTwdSC87KQ0G_gxHwVg2NaIX8jzeiDFG28A/viewform?embedded=true" frameborder="0" allowfullscreen  style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+            <h3 class="top-sep"></h3>
+            <br><br>
+            <div class="card"
+                style="max-width: 650px; margin: 0 auto 100px auto; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+                <div class="card-body" id="form-card">
+        
+                    <h5 class="card-title">Career Bootcamp - Study now Pay later</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">Coding Blocks Study now Later program - Registration form</h6>
+        
+                    <form method="POST" name="application-form">
+        
+                        <div class="form-group">
+                            <label for="name">Student Name</label>
+                            <input id="name" class="form-control" type="text" name="Name" placeholder="Name" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" class="form-control" type="text" name="Email" placeholder="Email" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="mobile">Contact no.</label>
+                            <input id="mobile" class="form-control" type="text" name="Mobile" placeholder="Contact no."
+                                required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="College">College name</label>
+                            <input id="College" class="form-control" type="text" name="College" placeholder="College name"
+                                required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="Degree">Degree (B.Tech / B.E./ MCA / BCA etc)</label>
+                            <input id="Degree" class="form-control" type="text" name="Degree" placeholder="Degree" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="branch">Branch (CSE / ECE / Mechanical etc)</label>
+                            <input id="branch" class="form-control" type="text" name="Branch" placeholder="Branch" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="year">Year of study (1st / 2nd / 3rd / 4th etc)</label>
+                            <input id="year" class="form-control" type="text" name="Year" placeholder="Year" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="company">Are you already placed? If yes, please mention Company name</label>
+                            <input id="company" class="form-control" type="text" name="Company" placeholder="Company name"
+                                required>
+                            <small class="form-text text-muted">Please write "NA" if not applicable</small>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="ctc">Are you already placed? If yes, please mention CTC</label>
+                            <input id="ctc" class="form-control" type="text" name="CTC" placeholder="CTC" required>
+                            <small class="form-text text-muted">Please write "NA" if not applicable</small>
+                        </div>
+        
+                        <div class="form-group">
+                            <label>If Experienced, then No of years of experience</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="0-1 year" value="0-1 year" />
+                                <label for="0-1 year" class="form-check-label">0-1 year</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="1-2 year" value="1-2 year" />
+                                <label for="1-2 year" class="form-check-label">1-2 year</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="2-3 year" value="2-3 year" />
+                                <label for="2-3 year" class="form-check-label">2-3 year</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="3-4 year" value="3-4 year" />
+                                <label for="3-4 year" class="form-check-label">3-4 year</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="4+ year" value="4+ year" />
+                                <label for="4+ year" class="form-check-label">4+ year</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="College student"
+                                    value="College student" />
+                                <label for="College student" class="form-check-label">College student</label>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="last-organisation">If Experienced, then last Organisation name</label>
+                            <input id="last-organisation" class="form-control" type="text" name="Last Organisation"
+                                placeholder="Last organisation" required>
+                            <small class="form-text text-muted">Please write "NA" if not applicable</small>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="last-ctc">If Experienced, then last CTC (in lacs)</label>
+                            <input id="last-ctc" class="form-control" type="text" name="Last CTC" placeholder="Last ctc"
+                                required>
+                            <small class="form-text text-muted">Please write "NA" if not applicable</small>
+                        </div>
+        
+                        <div class="text-right">
+                            <button type="button" class="btn btn-custom" id="clear">Clear form</button>
+                            <button type="submit" class="btn btn-custom btn-dark" id="submit" name="submit">
+                                <i class="fa fa-paper-plane"></i> Submit
+                            </button>
+                        </div>
+        
+                    </form>
+                </div>
+        
+                <div class="card-body" id="thanks-card">
+                    <h5 class="card-title">Thank you</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">We have received your application and we will get back to you
+                        soon.</h6>
+                    <div class="text-right">
+                        <a class="card-link" href="index.html">Back to home</a>
+                    </div>
+                </div>
+        
+                <div class="card-body" id="error-card">
+                    <h5 class="card-title text-danger">Oops!</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Something went wrong. Please try again.</h6>
+                    <div class="text-right">
+                        <a class="card-link" href="application-form.html">Refresh</a>
+                    </div>
+                </div>
+        
+            </div>
         </div>
     </section>
     <!-- END Section Error -->
@@ -144,6 +284,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Bootbox Template JS -->
     <script src="js/main.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbye8j9OGjYIAG8Iz-CeziotXBMShPdAJfw2_Ui8RGYnkegwDi8LTa15x75jDVvUDby5/exec";
+        const form = document.forms['application-form'];
+        const submitButton = document.getElementById('submit');
+        const clearButton = document.getElementById('clear');
+
+        const formCard = document.getElementById('form-card');
+        const thanksCard = document.getElementById('thanks-card');
+        const errorCard = document.getElementById('error-card');
+
+        clearButton.addEventListener('click', function (e) {
+            form.reset();
+        });
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            submitButton.innerHTML = 'Submitting...';
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    if (response.ok) {
+                        formCard.style.display = 'none';
+                        thanksCard.style.display = 'block';
+                        form.reset();
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(error => {
+                    formCard.style.display = 'none';
+                    errorCard.style.display = 'block';
+                    form.reset();
+                });
+        });
+    </script>
 </body>
 </html>
     
